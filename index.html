@@ -12,9 +12,40 @@
 </head>
 <body class="bg-white text-gray-900">
 
-    <header class="border-b-4 border-black py-6 mb-8 text-center">
-        <h1 class="text-5xl font-serif font-black tracking-tighter uppercase">El Diario</h1>
-        <p class="text-sm text-gray-500 mt-2">Edición Digital</p>
+   <!-- Header completo con navegación -->
+    <header class="mb-8">
+        <!-- Top bar: Fecha y accesos -->
+        <div class="border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-2 text-xs font-bold text-gray-500 uppercase tracking-widest">
+                <span>12 de Octubre de 2026</span>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-black transition">Iniciar Sesión</a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 transition">Suscribirse</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Título principal -->
+        <div class="py-8 text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-6xl md:text-7xl font-serif font-black tracking-tighter uppercase">El Diario</h1>
+            <p class="text-sm text-gray-500 mt-2 italic">Edición Digital</p>
+        </div>
+
+        <!-- Menú de categorías -->
+        <div class="border-t border-b-4 border-black sticky top-0 bg-white z-10">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <ul class="flex justify-start md:justify-center space-x-6 md:space-x-8 py-3 text-sm md:text-base font-bold uppercase tracking-wider overflow-x-auto whitespace-nowrap hide-scroll-bar">
+                    <li><a href="#" class="text-red-600 hover:text-red-800">Última Hora</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Política</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Economía</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Mundo</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Deportes</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Cultura</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Tecnología</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition">Opinión</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
