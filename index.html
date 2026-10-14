@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Moderno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+        .font-serif { font-family: 'Merriweather', serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <header class="border-b-4 border-black py-6 mb-8 text-center">
+        <h1 class="text-5xl font-serif font-black tracking-tighter uppercase">El Diario</h1>
+        <p class="text-sm text-gray-500 mt-2">Edición Digital</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- SECCIÓN EDITORIAL -->
+            <div class="lg:col-span-8 flex flex-col">
+                <article class="mb-8">
+                    <img src="https://images.pexels.com/photos/9630189/pexels-photo-9630189.jpeg" alt="Noticia Principal" class="w-full h-[400px] object-cover mb-4">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold leading-tight mb-3 hover:text-blue-600 cursor-pointer">
+                        El nuevo diseño digital transforma la manera de leer noticias
+                    </h2>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Implementar una jerarquía visual clara y un sistema de cuadrícula asimétrica mejora significativamente la retención del lector y reduce la fatiga visual en plataformas digitales.
+                    </p>
+                </article>
+
+                <hr class="border-t border-gray-300 my-6">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <article>
+                        <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&q=80&w=600&h=400" alt="Noticia Secundaria 1" class="w-full h-48 object-cover mb-3">
+                        <h3 class="text-2xl font-serif font-bold leading-snug hover:text-blue-600 cursor-pointer">
+                            Los mercados globales reaccionan a las nuevas políticas tecnológicas
+                        </h3>
+                    </article>
+                    
+                    <article>
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=600&h=400" alt="Noticia Secundaria 2" class="w-full h-48 object-cover mb-3">
+                        <h3 class="text-2xl font-serif font-bold leading-snug hover:text-blue-600 cursor-pointer">
+                            Avances en inteligencia artificial agilizan el desarrollo web
+                        </h3>
+                    </article>
+                </div>
+            </div>
+
+            <!-- SECCIÓN LATERAL -->
+            <aside class="lg:col-span-4 lg:border-l lg:border-gray-300 lg:pl-8 mt-8 lg:mt-0 border-t border-gray-300 pt-8 lg:border-t-0 lg:pt-0">
+                
+                <div class="mb-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-2 h-2 bg-red-600 rounded-full animate-pulse mr-2"></div>
+                        <h4 class="text-lg font-bold uppercase tracking-wider">Últimas Noticias</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="border-b border-gray-200 pb-4">
+                            <span class="text-xs font-bold text-red-600 mb-1 block">Hace 10 min</span>
+                            <a href="#" class="text-base font-serif font-semibold hover:text-blue-600">Declaraciones exclusivas del director técnico tras el partido de anoche.</a>
+                        </li>
+                        <li class="border-b border-gray-200 pb-4">
+                            <span class="text-xs font-bold text-gray-500 mb-1 block">10:15 AM</span>
+                            <a href="#" class="text-base font-serif font-semibold hover:text-blue-600">El tráfico en el centro de la ciudad se restablece tras el incidente matutino.</a>
+                        </li>
+                        <li class="border-b border-gray-200 pb-4">
+                            <span class="text-xs font-bold text-gray-500 mb-1 block">09:42 AM</span>
+                            <a href="#" class="text-base font-serif font-semibold hover:text-blue-600">Nuevas regulaciones ambientales entrarán en vigencia el próximo mes.</a>
+                        </li>
+                        <li class="pt-2">
+                            <a href="#" class="text-sm font-bold text-blue-600 hover:underline">Ver todas las noticias &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-10">
+                    <h4 class="text-lg font-bold uppercase tracking-wider border-b-2 border-black pb-2 mb-4">Opinión</h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-center">
+                            <img src="https://i.pravatar.cc/150?img=47" alt="Columnista" class="w-12 h-12 rounded-full mr-4 object-cover grayscale">
+                            <div>
+                                <span class="text-xs font-bold text-gray-500 uppercase block mb-1">Elena Ramírez</span>
+                                <a href="#" class="text-sm font-serif font-bold leading-tight hover:text-blue-600 block">El futuro incierto de las energías renovables en la región</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Columnista" class="w-12 h-12 rounded-full mr-4 object-cover grayscale">
+                            <div>
+                                <span class="text-xs font-bold text-gray-500 uppercase block mb-1">Carlos Vargas</span>
+                                <a href="#" class="text-sm font-serif font-bold leading-tight hover:text-blue-600 block">La educación frente al reto de la inteligencia artificial</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 border border-gray-200 p-6 rounded-lg text-center">
+                    <svg class="w-8 h-8 mx-auto mb-3 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h4 class="text-xl font-serif font-bold mb-2">El Boletín Matutino</h4>
+                    <p class="text-sm text-gray-600 mb-5">Las noticias más importantes del día, explicadas y directo en tu correo.</p>
+                    <form action="#" class="flex flex-col gap-3">
+                        <input type="email" placeholder="Tu correo electrónico" class="w-full border border-gray-300 p-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-black">
+                        <button type="submit" class="w-full bg-black text-white font-bold py-2.5 text-sm hover:bg-gray-800 transition duration-200">Suscribirme gratis</button>
+                    </form>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+
+   <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-black mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                
+                <!-- Columna 1: Marca -->
+                <div>
+                    <h2 class="text-3xl font-serif font-black tracking-tighter uppercase mb-4">El Diario</h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        El periódico digital líder en noticias de actualidad, análisis profundo y opinión independiente.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Secciones -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4 text-gray-300 border-b border-gray-700 pb-2">Secciones</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition duration-200">Últimas Noticias</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Política</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Economía</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Deportes</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Cultura</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Corporativo -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4 text-gray-300 border-b border-gray-700 pb-2">Corporativo</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition duration-200">Quiénes somos</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Equipo editorial</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Publicidad</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Trabaja con nosotros</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legales -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest mb-4 text-gray-300 border-b border-gray-700 pb-2">Legal</h3>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition duration-200">Términos y condiciones</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Política de privacidad</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Política de cookies</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-200">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Fila inferior: Copyright y Redes -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
+                <p>&copy; 2026 El Diario. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0 font-bold">
+                    <a href="#" class="hover:text-white transition duration-200">X (Twitter)</a>
+                    <a href="#" class="hover:text-white transition duration-200">Facebook</a>
+                    <a href="#" class="hover:text-white transition duration-200">Instagram</a>
+                    <a href="#" class="hover:text-white transition duration-200">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
